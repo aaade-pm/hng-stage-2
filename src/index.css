@@ -32,6 +32,25 @@ nav {
   gap: 15px;
 }
 
+.cart-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-btn p {
+  color: white;
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* styling hero section for desktop view */
 .hero {
   /* background-color: #ececec; */
@@ -569,6 +588,15 @@ h4 {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
+}
+
+.clp-info button {
+  background-color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .clp-quantity {

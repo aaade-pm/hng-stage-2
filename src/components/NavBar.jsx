@@ -2,8 +2,12 @@ import { NavLinks } from "../constants";
 import { CiSearch } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { BsCart2 } from "react-icons/bs";
+import { useContext } from "react";
+import { CartContext } from "../providers/CartContext";
 
 const NavBar = () => {
+  const { cart } = useContext(CartContext);
+
   return (
     <>
       <nav className="navbar">
@@ -20,9 +24,12 @@ const NavBar = () => {
         <div className="nav-features">
           <CiSearch />
           <CgProfile />
-          <a href="/cart">
-            <BsCart2 color="black" />
-          </a>
+          <div className="cart-btn">
+            <a href="/cart">
+              <BsCart2 color="black" />
+            </a>
+            <p>{cart.length}</p>
+          </div>
         </div>
       </nav>
     </>
