@@ -1,3 +1,5 @@
+import woman from "../assets/newsletter-lady.png";
+
 const Newsletter = () => {
   return (
     <>
@@ -14,7 +16,7 @@ const Newsletter = () => {
               placeholder="Email address"
             />
           </div>
-          <img src="src\assets\newsletter-lady.png" alt="" />
+          <img src={woman} alt="" />
         </div>
       </section>
     </>
