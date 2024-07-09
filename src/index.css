@@ -6,6 +6,14 @@
 }
 
 /* styling navbar section for desktop view */
+input[type="radio"] {
+  accent-color: #232323;
+}
+
+input[type="checkbox"] {
+  accent-color: #232323;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -933,4 +941,275 @@ li {
 .footer-bottom-links {
   display: flex;
   gap: 20px;
+}
+
+/* Media Queries */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  nav {
+    padding: 10px 80px;
+  }
+
+  .product-page {
+    padding: 20px 80px 0px 80px;
+  }
+
+  .cart-page,
+  .complete-order {
+    padding: 20px 80px;
+  }
+
+  .newsletter-input input {
+    margin: 15px 15%;
+    width: 70%;
+  }
+
+  .footer-nav {
+    padding: 50px 80px 35px 80px;
+  }
+
+  .footer-bottom {
+    margin: 0 80px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 40px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-features {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .product-page {
+    padding: 20px 40px 0px 40px;
+  }
+
+  .filter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product-list {
+    width: 100%;
+  }
+
+  .product-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cart-page,
+  .complete-order {
+    padding: 20px 40px;
+  }
+
+  .checkout-form {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .order-summary {
+    width: 100%;
+  }
+
+  .coupon-sect {
+    padding: 20px 40px;
+  }
+
+  .newsletter-input input {
+    margin: 15px 10%;
+    width: 80%;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px 40px 35px 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 40px;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Extra Small Mobile View */
+@media (max-width: 480px) {
+  nav {
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .nav-logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  .nav-features {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .nav-links,
+  #step-num-three,
+  #step-name-three,
+  #step-num-one,
+  #step-name-one,
+  #step-num-4,
+  .filter,
+  .product-page p,
+  .product-header,
+  .newsletter-detail img {
+    display: none;
+  }
+
+  #nf-1 {
+    display: none;
+  }
+
+  .product {
+    padding: 5px;
+  }
+
+  .product-page {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .product-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    /* border: 1px solid black; */
+  }
+  .cart-page,
+  .complete-order {
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .cart-body,
+  .checkout-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .cart-list,
+  .cart-summary,
+  .cart-header {
+    width: 100%;
+  }
+
+  .cart-stage {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #c-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .checkout-form {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .contact-form {
+    border: 1px solid black;
+    padding: 30px 15px;
+    border-radius: 3px;
+  }
+
+  .coupon-code {
+    width: 80%;
+  }
+
+  .coupon-sect {
+    padding: 20px 20px;
+  }
+
+  .order-header {
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+
+  .order-stage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0px;
+    margin-left: 20px;
+  }
+
+  .co-body,
+  .co-details,
+  .co-infos {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .newsletter-detail {
+    padding: 40px 10px;
+  }
+
+  .footer-nav {
+    padding: 50px 20px 35px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #fb-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 32px 0px;
+    margin: 0 0px;
+    border-top: 0.5px solid white;
+  }
+  .footer-title {
+    border-right: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    gap: 30px;
+  }
 }

@@ -28,7 +28,7 @@ const Footer = () => {
             <p>TERMS OF USE</p>
           </div>
 
-          <div className="footer-bottom-links">
+          <div id="fb-links" className="footer-bottom-links">
             <FaInstagram />
             <FiFacebook />
             <FiYoutube />

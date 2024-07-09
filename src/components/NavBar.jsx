@@ -22,8 +22,8 @@ const NavBar = () => {
           ))}
         </div>
         <div className="nav-features">
-          <CiSearch />
-          <CgProfile />
+          <CiSearch id="nf-1" />
+          <CgProfile id="nf-1" />
           <div className="cart-btn">
             <a href="/cart">
               <BsCart2 color="black" />

@@ -12,10 +12,10 @@ const CheckoutPage = () => {
 
           <div className="cart-stage">
             <div id="c-stage" className="shopping-stage-2">
-              <div className="step-num-2">
+              <div id="step-num-one" className="step-num-2">
                 <p>1</p>
               </div>
-              <div className="step-name-2">
+              <div id="step-name-one" className="step-name-2">
                 <p>Shopping cart</p>
               </div>
             </div>

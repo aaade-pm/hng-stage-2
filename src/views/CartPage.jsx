@@ -43,7 +43,7 @@ const CartPage = () => {
               <div className="step-num" id="step-num-three">
                 <p>3</p>
               </div>
-              <div className="step-name">
+              <div className="step-name" id="step-name-three">
                 <p>Order complete</p>
               </div>
             </div>

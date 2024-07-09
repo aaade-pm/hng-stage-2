@@ -8,10 +8,10 @@ const CompleteOrder = () => {
           <h4>Complete!</h4>
           <div className="order-stage">
             <div id="c-stage" className="shopping-stage-2">
-              <div className="step-num-2">
+              <div id="step-num-one" className="step-num-2">
                 <p>1</p>
               </div>
-              <div className="step-name-2">
+              <div id="step-num-one" className="step-name-2">
                 <p>Shopping cart</p>
               </div>
             </div>
@@ -19,7 +19,7 @@ const CompleteOrder = () => {
               <div className="step-num-3" id="step-num-4">
                 <p>2</p>
               </div>
-              <div className="step-name-4">
+              <div id="step-num-one" className="step-name-4">
                 <p>Checkout details</p>
               </div>
             </div>
