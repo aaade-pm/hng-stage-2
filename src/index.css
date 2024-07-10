@@ -40,6 +40,10 @@ nav {
   gap: 15px;
 }
 
+.mobile-product-header {
+  display: none;
+}
+
 .cart-btn {
   position: relative;
   display: flex;
@@ -951,6 +955,10 @@ li {
     padding: 10px 80px;
   }
 
+  .mobile-product-header {
+    display: none;
+  }
+
   .product-page {
     padding: 20px 80px 0px 80px;
   }
@@ -977,17 +985,48 @@ li {
 /* Mobile View */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    padding: 10px 40px;
+    padding: 20px 30px;
+    position: relative;
   }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
+  .nav-links,
+  #step-num-three,
+  #step-name-three,
+  #step-num-one,
+  #step-name-one,
+  #step-num-4,
+  .filter,
+  .product-page p,
+  .product-header,
+  .newsletter-detail img,
+  #nf-1 {
+    display: none;
   }
 
   .nav-features {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .mobile-filter {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .mobile-sort {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .m-filter-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
   }
 
@@ -1005,13 +1044,23 @@ li {
   }
 
   .product-card {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: (2, 1fr);
+    gap: 0px;
   }
 
   .cart-page,
   .complete-order {
-    padding: 20px 40px;
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .cart-body,
+  .checkout-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .checkout-form {
@@ -1019,35 +1068,81 @@ li {
     padding: 0px 20px;
   }
 
-  .order-summary {
+  .order-header,
+  .cart-header,
+  .cart-list,
+  .order-summary,
+  .cart-summary {
+    /* border: 1px solid black; */
     width: 100%;
   }
 
+  .order-stage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0px;
+    margin-left: 20px;
+  }
+
+  .co-body,
+  .co-details,
+  .co-infos {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .coupon-code {
+    width: 60%;
+  }
+
   .coupon-sect {
-    padding: 20px 40px;
+    padding: 20px 20px;
+  }
+
+  .newsletter-detail {
+    padding: 40px 10px;
+    justify-content: center;
   }
 
   .newsletter-input input {
-    margin: 15px 10%;
+    /* margin: 15px 10%; */
     width: 80%;
   }
 
   .footer-nav {
+    padding: 50px 20px 35px 20px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 50px 40px 35px 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #fb-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer-bottom {
-    flex-direction: column;
-    gap: 10px;
-    margin: 0 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 32px 0px;
+    margin: 0 0px;
+    border-top: 0.5px solid white;
+  }
+  .footer-title {
+    border-right: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 
-  .footer-bottom-links {
+  .footer-links ul {
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
   }
 }
 
@@ -1070,6 +1165,28 @@ li {
     top: 20px;
   }
 
+  .mobile-filter {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+  .mobile-sort {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .m-filter-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
   .nav-links,
   #step-num-three,
   #step-name-three,
@@ -1079,10 +1196,7 @@ li {
   .filter,
   .product-page p,
   .product-header,
-  .newsletter-detail img {
-    display: none;
-  }
-
+  .newsletter-detail img,
   #nf-1 {
     display: none;
   }

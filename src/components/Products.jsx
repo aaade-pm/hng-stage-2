@@ -17,6 +17,27 @@ const Products = () => {
   return (
     <>
       <section className="product-list">
+        <div className="mobile-product-header">
+          <div className="mobile-filter">
+            <h3>Filter</h3>
+            <div className="m-filter-icons">
+              <div className="m-icon">
+                <BsFillGrid1X2Fill size="12" />
+              </div>
+              <div className="m-icon-2">
+                <BsFillGrid3X2GapFill size="12" />
+              </div>
+            </div>
+          </div>
+          <div className="mobile-sort">
+            <h3>Headsets</h3>
+            <div className="m-sortby">
+              <h4>
+                Sort by <MdKeyboardArrowDown size="12" />
+              </h4>
+            </div>
+          </div>
+        </div>
         <div className="product-header">
           <p>Headsets</p>
           <div className="sort">
